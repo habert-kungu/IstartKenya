@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add custom styles if needed */
+:where([class^="ri-"])::before {
+  content: "\f3c2";
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #f78154;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Existing styles... */
+.energy-wave {
+  position: relative;
+}
+.energy-wave::before,
+.energy-wave::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(247, 129, 84, 0.5); /* #F78154 with opacity */
+  border-radius: 9999px;
+  transform: translate(-50%, -50%);
+  animation: wave 2s infinite ease-out;
+}
+.energy-wave::after {
+  animation-delay: 1s;
+}
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+  }
+}

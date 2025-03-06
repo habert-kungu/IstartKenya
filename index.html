@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISTART - Computer School</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="icon" type="image/x-icon" href="/public/istart_logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav
+      class="fixed top-0 left-0 right-0 bg-white bg-opacity-70 shadow-sm z-50"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <div class="flex items-center">
+            <img
+              src="public/istart_logo.png"
+              href="/index.html"
+              alt="istart_logo"
+            />
+            <a href="#" class="font-['Pacifico'] text-2xl ml-4 text-primary"
+              >ISTART</a
+            >
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#" class="nav-link text-secondary font-medium">Home</a>
+            <a href="courses.html" class="nav-link text-secondary font-medium"
+              >Courses</a
+            >
+            <a href="school.html" class="nav-link text-secondary font-medium"
+              >Schools Program</a
+            >
+            <a href="about.html" class="nav-link text-secondary font-medium"
+              >About Us</a
+            >
+            <button
+              class="bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-opacity-90 transition-all cursor-pointer whitespace-nowrap"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="pt-16">
+      <section
+        class="relative min-h-[600px] flex items-center"
+        style="
+          background-image: url(/public/hero_image_1.jpeg);
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent"
+        ></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div class="max-w-xl">
+            <h1 class="text-5xl font-bold text-secondary mb-6">
+              Empower Your Future with Digital Skills
+            </h1>
+            <p class="text-xl text-gray-600 mb-8">
+              Kenya's Premier Computer School for Modern Technology Education
+            </p>
+            <button
+              class="bg-primary text-white px-8 py-4 !rounded-button text-lg font-medium hover:bg-opacity-90 transition-all cursor-pointer whitespace-nowrap"
+            >
+              Explore Courses
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="bg-primary/10 py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-center space-x-2">
+            <i class="ri-notification-3-line text-primary text-xl"></i>
+            <p class="text-red-400 font-medium">
+              Enrollment Open for All Ages! Join Our Next Cohort Starting April
+              2025
+            </p>
+          </div>
+        </div>
+      </div>
+      <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-center text-secondary mb-16">
+            Featured Courses
+          </h2>
+          <div class="grid md:grid-cols-3 gap-9">
+            <!--Coding fundamentals-->
+            <div
+              class="bg-white p-8 rounded shadow-lg hover:shadow-xl transition-all"
+            >
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6"
+              >
+                <i class="ri-code-line text-primary text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-secondary mb-4">
+                Coding Fundamentals
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Master the basics of programming with Python, JavaScript, and
+                web development fundamentals.
+              </p>
+              <a
+                href="/course.html"
+                class="text-primary font-medium hover:underline"
+                >Learn More →</a
+              >
+            </div>
+            <!--Arduino programming-->
+
+            <div
+              class="bg-white p-8 rounded shadow-lg hover:shadow-xl transition-all"
+            >
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6"
+              >
+                <i class="ri-robot-line text-primary text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-secondary mb-4">
+                Arduino Programming
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Learn hardware programming and create interactive electronic
+                projects with Arduino.
+              </p>
+              <a
+                href="/course.html"
+                class="text-primary font-medium hover:underline"
+                >Learn More →</a
+              >
+            </div>
+
+            <!-- Computer Packages -->
+            <div
+              class="relative bg-white p-8 rounded shadow-lg hover:shadow-xl transition-all"
+            >
+              <div
+                class="absolute top-1 left-75 w-3 h-3 bg-primary rounded-full energy-wave"
+              ></div>
+
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6"
+              >
+                <i class="ri-database-2-line text-primary text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-secondary mb-4">
+                Computer Packages
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Get proficient in essential software including MS Office, Adobe
+                Creative Suite, and more.
+              </p>
+              <a
+                href="/course.html"
+                class="text-primary font-medium hover:underline"
+                >Learn More →</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-center text-secondary mb-16">
+            Learning Paths for Everyone
+          </h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-[#F5F5DC] p-8 rounded-lg shadow-lg">
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-[#800000]/10 rounded-full mb-6"
+              >
+                <i class="ri-graduation-cap-line text-[#800000] text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-secondary mb-4">
+                Students
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Structured learning paths for high school and university
+                students. Build a strong foundation in technology.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-check-line text-[#800000] mr-2"></i>
+                  Flexible class schedules
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-check-line text-[#800000] mr-2"></i>
+                  Student-friendly rates
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-check-line text-[#800000] mr-2"></i>
+                  Project-based learning
+                </li>
+              </ul>
+            </div>
+            <div class="bg-[#F5F5DC] p-8 rounded-lg shadow-lg">
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-[#800000]/10 rounded-full mb-6"
+              >
+                <i class="ri-building-line text-[#800000] text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-secondary mb-4">Schools</h3>
+              <p class="text-gray-600 mb-6">
+                Comprehensive technology programs for schools. We bring our
+                expertise to your institution.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-check-line text-[#800000] mr-2"></i>
+                  Customized curriculum
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-check-line text-[#800000] mr-2"></i>
+                  On-site training
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-check-line text-[#800000] mr-2"></i>
+                  Equipment provided
+                </li>
+              </ul>
+            </div>
+            <div class="bg-[#F5F5DC] p-8 rounded-lg shadow-lg">
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-[#800000]/10 rounded-full mb-6"
+              >
+                <i class="ri-user-line text-[#800000] text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-secondary mb-4">Adults</h3>
+              <p class="text-gray-600 mb-6">
+                Career transition and skill enhancement programs for working
+                professionals and enthusiasts.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-check-line text-[#800000] mr-2"></i>
+                  Evening classes
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-check-line text-[#800000] mr-2"></i>
+                  Weekend workshops
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-check-line text-[#800000] mr-2"></i>
+                  Career guidance
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <img
+                src="/public/teaching_computer.jpeg"
+                alt="School Program"
+                class="rounded-lg shadow-lg"
+                height="300"
+                width="500"
+              />
+            </div>
+            <div>
+              <h2 class="text-3xl font-bold text-secondary mb-6">
+                We Come to Your School
+              </h2>
+              <p class="text-gray-600 mb-8">
+                Partner with ISART to bring cutting-edge technology education to
+                your school. Our experienced instructors will provide hands-on
+                learning experiences for your students.
+              </p>
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-center">
+                  <i class="ri-check-line text-primary text-xl mr-3"></i>
+                  <span class="text-gray-600"
+                    >Customized curriculum for your school's needs</span
+                  >
+                </li>
+                <li class="flex items-center">
+                  <i class="ri-check-line text-primary text-xl mr-3"></i>
+                  <span class="text-gray-600"
+                    >Professional equipment and learning materials</span
+                  >
+                </li>
+                <li class="flex items-center">
+                  <i class="ri-check-line text-primary text-xl mr-3"></i>
+                  <span class="text-gray-600">Flexible scheduling options</span>
+                </li>
+              </ul>
+              <button
+                class="bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all cursor-pointer whitespace-nowrap"
+              >
+                Partner With Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-center text-secondary mb-16">
+            Why Choose ISART
+          </h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center">
+              <div
+                class="w-20 h-20 mx-auto flex items-center justify-center bg-primary/10 rounded-full mb-6"
+              >
+                <i class="ri-user-star-line text-primary text-3xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-secondary mb-4">
+                Experienced Instructors
+              </h3>
+              <p class="text-gray-600">
+                Learn from industry professionals with years of practical
+                experience.
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="w-20 h-20 mx-auto flex items-center justify-center bg-primary/10 rounded-full mb-6"
+              >
+                <i class="ri-tools-line text-primary text-3xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-secondary mb-4">
+                Hands-on Learning
+              </h3>
+              <p class="text-gray-600">
+                Practice with real projects and gain practical experience.
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="w-20 h-20 mx-auto flex items-center justify-center bg-primary/10 rounded-full mb-6"
+              >
+                <i class="ri-book-open-line text-primary text-3xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-secondary mb-4">
+                Modern Curriculum
+              </h3>
+              <p class="text-gray-600">
+                Updated content aligned with industry standards and trends.
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="w-20 h-20 mx-auto flex items-center justify-center bg-primary/10 rounded-full mb-6"
+              >
+                <i class="ri-flight-takeoff-line text-primary text-3xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-secondary mb-4">
+                Career Support
+              </h3>
+              <p class="text-gray-600">
+                Guidance and resources for your professional development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-2xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-8">
+              Start Your Tech Journey Today
+            </h2>
+                        </form>
+          </div>
+        </div>
+      </section>
+      <footer class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid md:grid-cols-3 gap-9 mb-8">
+            <div>
+              <img src="public/istart_logo.png" alt="istart_logo">
+              <h3 class="font-['Pacifico'] text-2xl ml-4 text-primary mb-4">Istart</h3>
+              <p class="text-gray-600">
+                Empowering Kenya's future through technology education.
+              </p>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-secondary mb-4">
+                Quick Links
+              </h4>
+              <ul class="space-y-2">
+                <li>
+                  <a href="/course.html" class="text-gray-600 hover:text-primary"
+                    >Courses</a
+                  >
+                </li>
+                <li>
+                  <a href="/school_programme.html" class="text-gray-600 hover:text-primary"
+                    >Schools Program</a
+                  >
+                </li>
+                <li>
+                  <a href="/about.html" class="text-gray-600 hover:text-primary"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#footer" class="text-gray-600 hover:text-primary"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-secondary mb-4">Contact</h4>
+              <ul class="space-y-2">
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-map-pin-line mr-2"></i>
+                  Nairobi, Kenya
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-phone-line mr-2"></i>
+                  +254 796 893051  Office
+
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-phone-line mr-2"></i>
+                  +254 723 969536  Cell
+
+                </li>
+
+                <li class="flex items-center text-gray-600">
+                  <i class="ri-mail-line mr-2"></i>
+                    wilson.kihanda@istart.education
+                </li>
+              </ul>
+            </div>
+               
+          </div>
+          <div class="border-t pt-8">
+            <div class="flex justify-between items-center">
+              <p class="text-gray-600">© 2025 ISART. All rights reserved.</p>
+              <div class="flex space-x-4">
+                <a href="#" class="text-gray-600 hover:text-primary">
+                  <i class="ri-facebook-fill text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-primary">
+                  <i class="ri-twitter-fill text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-primary">
+                  <i class="ri-instagram-fill text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-primary">
+                  <i class="ri-linkedin-fill text-xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script>
+      document.querySelectorAll("button").forEach((button) => {
+        button.addEventListener("click", (e) => {
+          if (!e.target.type) {
+            const notification = document.createElement("div");
+            notification.className =
+              "fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg z-50";
+            notification.textContent =
+              "Thank you for your interest! We will contact you soon.";
+            document.body.appendChild(notification);
+            setTimeout(() => {
+              notification.remove();
+            }, 3000);
+          }
+        });
+      });
+      document.querySelectorAll("form").forEach((form) => {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const formData = new FormData(form);
+          const data = Object.fromEntries(formData);
+          const notification = document.createElement("div");
+          notification.className =
+            "fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg";
+          notification.textContent = "Thank you for your submission!";
+          document.body.appendChild(notification);
+          setTimeout(() => {
+            notification.remove();
+          }, 3000);
+          form.reset();
+        });
+      });
+    </script>
+  </body>
+</html>
