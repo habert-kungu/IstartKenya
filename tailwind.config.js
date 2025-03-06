@@ -6,6 +6,9 @@ export default {
       colors: {
         primary: "#F78154",
         secondary: "#1f2937",
+        green: "#AF9164",
+        neutral: "#F7F3E3",
+        maroon: "#800000 ",
       },
       borderRadius: {
         none: "0px",
