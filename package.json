@@ -1,11 +1,11 @@
 {
   "name": "istart",
-  "private": true,
+  "private": true, // "true" should be a boolean (no quotes)
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build":"npx tailwindcss -i ./src/style.css -o ./dist/output.css --minify"
+    "build": "npx tailwindcss -i ./src/style.css -o ./dist/output.css --minify", // Added missing comma here
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -17,3 +17,4 @@
     "vite": "^6.2.0"
   }
 }
+
