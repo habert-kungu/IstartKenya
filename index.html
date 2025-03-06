@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ISTART - Computer School</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="src/main.js"></script>
     <link href="./dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="/src/style.css" />
     <link rel="icon" type="image/x-icon" href="/public/istart_logo.png" />
@@ -19,48 +21,17 @@
     />
   </head>
   <body>
-    <nav
-      class="fixed top-0 left-0 right-0 bg-white bg-opacity-70 shadow-sm z-50"
-    >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16 items-center">
-          <div class="flex items-center">
-            <img
-              src="public/istart_logo.png"
-              href="/index.html"
-              alt="istart_logo"
-            />
-            <a href="#" class="font-['Pacifico'] text-2xl ml-4 text-primary"
-              >ISTART</a
-            >
-          </div>
-          <div class="hidden md:flex items-center space-x-8">
-            <a href="#" class="nav-link text-secondary font-medium">Home</a>
-            <a href="courses.html" class="nav-link text-secondary font-medium"
-              >Courses</a
-            >
-            <a href="school.html" class="nav-link text-secondary font-medium"
-              >Schools Program</a
-            >
-            <a href="about.html" class="nav-link text-secondary font-medium"
-              >About Us</a
-            >
-            <button
-              class="bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-opacity-90 transition-all cursor-pointer whitespace-nowrap"
-            >
-              Contact Us
-            </button>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <!--Navbar-->
+
+    <div id="navbar"></div>
+    <!--main-->
     <main class="pt-16">
       <section
         class="relative min-h-[600px] flex items-center"
         style="
-          background-image: url(/public/hero_image_1.jpeg);
-          background-size: cover;
-          background-position: center;
+        background-image: url(/public/hero_image_1.jpeg);
+        background-size: cover;
+        background-position: center;
         "
       >
         <div
@@ -118,7 +89,7 @@
               <a
                 href="/course.html"
                 class="text-primary font-medium hover:underline"
-                >Learn More →</a
+              >Learn More →</a
               >
             </div>
             <!--Arduino programming-->
@@ -141,7 +112,7 @@
               <a
                 href="/course.html"
                 class="text-primary font-medium hover:underline"
-                >Learn More →</a
+              >Learn More →</a
               >
             </div>
 
@@ -168,7 +139,7 @@
               <a
                 href="/course.html"
                 class="text-primary font-medium hover:underline"
-                >Learn More →</a
+              >Learn More →</a
               >
             </div>
           </div>
@@ -186,6 +157,8 @@
               >
                 <i class="ri-graduation-cap-line text-[#800000] text-2xl"></i>
               </div>
+              <!--students-->
+
               <h3 class="text-xl font-semibold text-secondary mb-4">
                 Students
               </h3>
@@ -214,6 +187,8 @@
               >
                 <i class="ri-building-line text-[#800000] text-2xl"></i>
               </div>
+
+              <!--school-->
               <h3 class="text-xl font-semibold text-secondary mb-4">Schools</h3>
               <p class="text-gray-600 mb-6">
                 Comprehensive technology programs for schools. We bring our
@@ -240,6 +215,7 @@
               >
                 <i class="ri-user-line text-[#800000] text-2xl"></i>
               </div>
+              <!--Adults-->
               <h3 class="text-xl font-semibold text-secondary mb-4">Adults</h3>
               <p class="text-gray-600 mb-6">
                 Career transition and skill enhancement programs for working
@@ -288,13 +264,13 @@
                 <li class="flex items-center">
                   <i class="ri-check-line text-primary text-xl mr-3"></i>
                   <span class="text-gray-600"
-                    >Customized curriculum for your school's needs</span
+                  >Customized curriculum for your school's needs</span
                   >
                 </li>
                 <li class="flex items-center">
                   <i class="ri-check-line text-primary text-xl mr-3"></i>
                   <span class="text-gray-600"
-                    >Professional equipment and learning materials</span
+                  >Professional equipment and learning materials</span
                   >
                 </li>
                 <li class="flex items-center">
@@ -314,7 +290,7 @@
       <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 class="text-3xl font-bold text-center text-secondary mb-16">
-            Why Choose ISART
+            Why Choose ISTART
           </h2>
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="text-center">
@@ -379,127 +355,14 @@
             <h2 class="text-3xl font-bold text-white mb-8">
               Start Your Tech Journey Today
             </h2>
-                        </form>
           </div>
         </div>
       </section>
-      <footer class="bg-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="grid md:grid-cols-3 gap-9 mb-8">
-            <div>
-              <img src="public/istart_logo.png" alt="istart_logo">
-              <h3 class="font-['Pacifico'] text-2xl ml-4 text-primary mb-4">Istart</h3>
-              <p class="text-gray-600">
-                Empowering Kenya's future through technology education.
-              </p>
-            </div>
-            <div>
-              <h4 class="text-lg font-semibold text-secondary mb-4">
-                Quick Links
-              </h4>
-              <ul class="space-y-2">
-                <li>
-                  <a href="/course.html" class="text-gray-600 hover:text-primary"
-                    >Courses</a
-                  >
-                </li>
-                <li>
-                  <a href="/school_programme.html" class="text-gray-600 hover:text-primary"
-                    >Schools Program</a
-                  >
-                </li>
-                <li>
-                  <a href="/about.html" class="text-gray-600 hover:text-primary"
-                    >About Us</a
-                  >
-                </li>
-                <li>
-                  <a href="#footer" class="text-gray-600 hover:text-primary"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="text-lg font-semibold text-secondary mb-4">Contact</h4>
-              <ul class="space-y-2">
-                <li class="flex items-center text-gray-600">
-                  <i class="ri-map-pin-line mr-2"></i>
-                  Nairobi, Kenya
-                </li>
-                <li class="flex items-center text-gray-600">
-                  <i class="ri-phone-line mr-2"></i>
-                  +254 796 893051  Office
+      <!--footer section-->
+      <div id="footer"></div>
 
-                </li>
-                <li class="flex items-center text-gray-600">
-                  <i class="ri-phone-line mr-2"></i>
-                  +254 723 969536  Cell
-
-                </li>
-
-                <li class="flex items-center text-gray-600">
-                  <i class="ri-mail-line mr-2"></i>
-                    wilson.kihanda@istart.education
-                </li>
-              </ul>
-            </div>
-               
-          </div>
-          <div class="border-t pt-8">
-            <div class="flex justify-between items-center">
-              <p class="text-gray-600">© 2025 ISART. All rights reserved.</p>
-              <div class="flex space-x-4">
-                <a href="#" class="text-gray-600 hover:text-primary">
-                  <i class="ri-facebook-fill text-xl"></i>
-                </a>
-                <a href="#" class="text-gray-600 hover:text-primary">
-                  <i class="ri-twitter-fill text-xl"></i>
-                </a>
-                <a href="#" class="text-gray-600 hover:text-primary">
-                  <i class="ri-instagram-fill text-xl"></i>
-                </a>
-                <a href="#" class="text-gray-600 hover:text-primary">
-                  <i class="ri-linkedin-fill text-xl"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      </div>
     </main>
-    <script>
-      document.querySelectorAll("button").forEach((button) => {
-        button.addEventListener("click", (e) => {
-          if (!e.target.type) {
-            const notification = document.createElement("div");
-            notification.className =
-              "fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg z-50";
-            notification.textContent =
-              "Thank you for your interest! We will contact you soon.";
-            document.body.appendChild(notification);
-            setTimeout(() => {
-              notification.remove();
-            }, 3000);
-          }
-        });
-      });
-      document.querySelectorAll("form").forEach((form) => {
-        form.addEventListener("submit", (e) => {
-          e.preventDefault();
-          const formData = new FormData(form);
-          const data = Object.fromEntries(formData);
-          const notification = document.createElement("div");
-          notification.className =
-            "fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg";
-          notification.textContent = "Thank you for your submission!";
-          document.body.appendChild(notification);
-          setTimeout(() => {
-            notification.remove();
-          }, 3000);
-          form.reset();
-        });
-      });
-    </script>
+    <script src="/src/main.js"></script>
   </body>
 </html>

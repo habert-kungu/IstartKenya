@@ -1,24 +1,35 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
-
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
-
-setupCounter(document.querySelector('#counter'))
+$(function () {
+  $("#navbar").load("navbar.html");
+  $("#footer").load("footer.html");
+});
+document.querySelectorAll("button").forEach((button) => {
+  button.addEventListener("click", (e) => {
+    if (!e.target.type) {
+      const notification = document.createElement("div");
+      notification.className =
+        "fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg z-50";
+      notification.textContent =
+        "Thank you for your interest! We will contact you soon.";
+      document.body.appendChild(notification);
+      setTimeout(() => {
+        notification.remove();
+      }, 3000);
+    }
+  });
+});
+document.querySelectorAll("form").forEach((form) => {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData);
+    const notification = document.createElement("div");
+    notification.className =
+      "fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg";
+    notification.textContent = "Thank you for your submission!";
+    document.body.appendChild(notification);
+    setTimeout(() => {
+      notification.remove();
+    }, 3000);
+    form.reset();
+  });
+});
