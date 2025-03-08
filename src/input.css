@@ -1,9 +1,6 @@
-@import "flowbite/src/themes/default";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 /* Add custom styles if needed */
 :where([class^="ri-"])::before {
   content: "\f3c2"; /* Ensure this is the correct unicode */

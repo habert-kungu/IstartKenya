@@ -4,6 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Courses - ISTART Kenya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F78154",
+              secondary: "#1f2937",
+              green: "#AF9164",
+              neutral: "#F7F3E3",
+              maroon: "#800000 ",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+        plugins: [],
+      };
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="src/main.js"></script>
     <link rel="icon" type="image/x-icon" href="/public/istart_logo.png" />

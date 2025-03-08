@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./**/*.html"], // Scans all HTML files in all directories
+
+export tailwind.config = {
+  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
