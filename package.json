@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
-    "build": "npx tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch"
+    "build": "vite build"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.0.12",
