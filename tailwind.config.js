@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./*.html"], // Scans root HTML files
+  content: ["./**/*.html"], // Scans all HTML files in all directories
   theme: {
     extend: {
       colors: {
