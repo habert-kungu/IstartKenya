@@ -12,3 +12,11 @@ fetch("/components/footer.html")
     document.getElementById("footer").innerHTML = data;
   })
   .catch((error) => console.error("Error loading footer:", error));
+
+// main.js
+document.getElementById("menu-toggle").addEventListener("click", function () {
+  const mobileMenu = document.getElementById("mobile-menu");
+  mobileMenu.classList.toggle("hidden");
+});
+
+u;
